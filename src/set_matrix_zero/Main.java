@@ -16,18 +16,23 @@ public class Main {
 
         matrix[2][0] = 1;
         matrix[2][1] = 1;
-        matrix[2][2] = 1;
+        matrix[2][2] = 0;
         matrix[2][3] = 1;
 
         setZeroes(matrix);
     }
 
     public static void setZeroes(int[][] matrix) {
-        int[][] result = new int[matrix.length][matrix[0].length];
-        BetterApproach.initializeValue(result, -1);
-
-        BetterApproach.checkForTheValueZeroInMatrix(matrix, result);
-        BetterApproach.printMatrix(result);
+//        int[][] result = new int[matrix.length][matrix[0].length];
+//        BetterApproach.initializeValue(result, -1);
+//
+//        BetterApproach.checkForTheValueZeroInMatrix(matrix, result);
+//        BetterApproach.printMatrix(result);
+        System.out.println("Actual Matrix: ");
+        BetterApproach.printMatrix(matrix);
+        OptimalApproach.findTheZeroInRowAndColumn(matrix);
+        System.out.println("Zero Matrix: ");
+        BetterApproach.printMatrix(matrix);
     }
 }
 
@@ -116,6 +121,27 @@ class BetterApproach{
                 System.out.print(matrix[i][j]);
             }
             System.out.println();
+        }
+    }
+}
+
+class OptimalApproach {
+    public static void findTheZeroInRowAndColumn(int[][] matrix) {
+        int rowZero = 1;
+        for(int iterator = 0; iterator < matrix.length; iterator++) {
+            for(int jterator = 0; jterator < matrix[0].length; jterator++) {
+            System.out.println("called");
+                if(matrix[0][0] == 0) {
+                    rowZero = 0;
+                } else  {
+                    if (matrix[iterator][jterator] == 0) {
+                        System.out.println(iterator+""+jterator);
+                        matrix[iterator][0] = 0;
+                        matrix[0][jterator] = 0;
+                    }
+
+                }
+            }
         }
     }
 }
