@@ -1,10 +1,16 @@
-class Main {
+// Question :-
+// Demo question 
 
-    // Question :-
-    // Demo question 
-    
+class Main {    
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        
     }
+
+}
+
+// Time Complexity  : O(N)
+// Space Complexity : O(1)
+
+class Demo {
 
 }
