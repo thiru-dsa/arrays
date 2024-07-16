@@ -17,7 +17,7 @@ package src.dsa.day4.printDiagonalFromRightToLeftInARectangleMatrix;
     // 4 5
     // 6
 
-// Time Complexity  : O(N2)
+// Time Complexity  : O(N*M)
 // Space Complexity : O(1)
 
 public class PrintDiagonalFromRightToLeftInARectangleMatrix {

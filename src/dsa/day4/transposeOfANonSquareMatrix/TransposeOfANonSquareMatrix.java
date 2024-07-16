@@ -17,8 +17,8 @@ package src.dsa.day4.transposeOfANonSquareMatrix;
     //   [2, 4, 6],
     // ]
 
-// Time Complexity  : O(N2)
-// Space Complexity : O(1)
+// Time Complexity  : O(N*M)
+// Space Complexity : O(N)
 
 public class TransposeOfANonSquareMatrix {
     

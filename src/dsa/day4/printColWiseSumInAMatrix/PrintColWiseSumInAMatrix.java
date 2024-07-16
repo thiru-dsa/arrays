@@ -16,7 +16,7 @@ package src.dsa.day4.printColWiseSumInAMatrix;
     // Col 2 sum: 15
     // Col 3 sum: 18
 
-// Time Complexity  : O(N2)
+// Time Complexity  : O(N*M)
 // Space Complexity : O(1)
 
 public class PrintColWiseSumInAMatrix {
